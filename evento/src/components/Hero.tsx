@@ -7,7 +7,7 @@ export default function Hero(){
                 <h1 className="text-4xl font-bold uppercase">The Stage is Yours, We Handle the Rest</h1>
                 <br/>
                 <div className="text-center">
-                    <span className="text-2xl text-wrap">
+                    <span className="text-2xl text-wrap text-balance">
                         Streamline the process for organizers to manage, sell tickets and merchandise effortlessly.<br />
                         Provide audiences with an intuitive platform to book their favorite events quickly.
                     </span>

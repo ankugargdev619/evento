@@ -21,11 +21,11 @@ export default function Navbar(){
                             <div className="md:hidden">
                                 <button className="align-middle" onClick={()=>setOpen(!isOpen)}>
                                     <div className="flex flex-col gap-1 justify-center">
-                                        <motion.div className="w-10 h-1 bg-brand-600 rounded-full" 
-
-                                        ></motion.div>
-                                        <motion.div className="w-10 h-1 bg-brand-600 rounded-full"></motion.div>
-                                        <motion.div className="w-5 h-1 bg-brand-600 rounded-full"></motion.div>
+                                        <motion.div 
+                                            
+                                            className="w-10 h-1 bg-brand-600 rounded-full" />
+                                        <motion.div className="w-10 h-1 bg-brand-600 rounded-full" />
+                                        <motion.div className="w-5 h-1 bg-brand-600 rounded-full translate-x-5" />
                                     </div>
                                 </button>
                             </div>
