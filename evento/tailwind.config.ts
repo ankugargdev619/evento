@@ -27,7 +27,8 @@ export default {
       },
       backgroundImage: {
         bannerImg : "url('/event-banner.jpeg')",
-        blackOverlay : "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.9) 75%)"
+        blackOverlay : "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.9) 75%)",
+        customers: "url('/happy-customers.jpeg')"
       },
       fontFamily: {
         barlow:['"Barlow-SemiBold"','sans-serif']

@@ -1,7 +1,5 @@
 'use client'
-import { PiClockClockwiseBold } from "react-icons/pi";
 import { motion} from 'motion/react';
-import { IconType } from "react-icons";
 
 interface FeatureCardProps {
     title : string;
@@ -21,6 +19,5 @@ export default function FeatureCard({title, description,icon}: FeatureCardProps)
                     <br/>
                     <p className="text-justify pl-4 pb-2">{description}</p>
                 </div>
-            
     </motion.div>
 }

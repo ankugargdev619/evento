@@ -5,7 +5,7 @@ import {AnimatePresence, motion} from 'motion/react';
 export default function Navbar(){
     const [isOpen,setOpen] = useState(false);
     return <div className="sticky top-8 mx-4 md:mx-10 z-50">
-        <div className=" w-full px-4 md:px-10 absolute backdrop-blur-md bg-opacity-70 bg-white rounded-lg text-black">
+        <div className=" w-full px-4 md:px-10 absolute backdrop-blur-md bg-opacity-50 bg-white rounded-lg text-black">
                     <div className="flex justify-between items-center">
                             <div className="h-12 flex items-center">
                                 <img className="h-10" src="/logo.png" />
