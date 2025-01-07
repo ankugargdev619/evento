@@ -19,15 +19,68 @@ export default function Navbar(){
                                 </div>
                             </div>
                             <div className="md:hidden">
-                                <button className="align-middle" onClick={()=>setOpen(!isOpen)}>
-                                    <div className="flex flex-col gap-1 justify-center">
-                                        <motion.div 
-                                            
-                                            className="w-10 h-1 bg-brand-600 rounded-full" />
-                                        <motion.div className="w-10 h-1 bg-brand-600 rounded-full" />
-                                        <motion.div className="w-5 h-1 bg-brand-600 rounded-full translate-x-5" />
+                                <motion.button
+                                    initial={false}
+                                    className="align-middle w-10"  
+                                    onClick={()=>setOpen(!isOpen)}
+                                    animate={isOpen ? "open" : "closed"}>
+                                    <div className="relative h-5 flex flex-col gap-1 justify-center">
+                                        <motion.span
+                                            style={{
+                                                left:"50%",
+                                                top:"10%",
+                                                x:"-50%",
+                                                y : "-50%"
+                                            }}
+                                            variants={{
+                                                open: {
+                                                    top : ["10%","50%","50%"],
+                                                    rotate : ["0deg","0deg","45deg"]
+                                                },
+                                                closed : {
+                                                    rotate : ["45deg","0deg","0deg"],
+                                                    top : ["50%","50%","10%"],
+                                                }
+                                            }}
+                                            className="absolute right-0 -translate-y-2  w-10 h-1 bg-brand-600 rounded-full" />
+                                        <motion.span 
+                                            style={{
+                                                left:"50%",
+                                                top:"50%",
+                                                x:"-50%",
+                                                y : "-50%"
+                                            }}
+                                            variants={{
+                                                open : {
+                                                    rotate : ["0deg","0deg","-45deg"]
+                                                },
+                                                closed : {
+                                                    rotate : ["-45deg","0deg","0deg"]
+                                                }
+                                            }}
+                                            className="absolute w-10 h-1 bg-brand-600 rounded-full" />
+                                        <motion.span
+                                            style={{
+                                                left:"calc(50% + 10px)",
+                                                top:"90%",
+                                                x:"-50%",
+                                                y : "-50%"
+                                            }}
+                                            variants={{
+                                                open: {
+                                                    left:"50%",
+                                                    top : ["90%","50%","50%"],
+                                                    rotate : ["0deg","0deg","45deg"]
+                                                },
+                                                closed : {
+                                                    left:"calc(50% + 10px)",
+                                                    rotate : ["45deg","0deg","0deg"],
+                                                    top : ["50%","50%","90%"],
+                                                }
+                                            }}
+                                            className="absolute w-5 h-1 right-0 translate-y-2 bg-brand-600 rounded-full" />
                                     </div>
-                                </button>
+                                </motion.button>
                             </div>
                             
                     </div>
