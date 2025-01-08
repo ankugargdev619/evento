@@ -1,9 +1,8 @@
 
-
 export default function Hero(){
     return <section className="bg-bannerImg bg-no-repeat bg-cover bg-bottom h-screen md:h-[75vh] w-full  md:max-h-[500px] md:rounded-bl-lg md:rounded-br-lg overflow-hidden">
         <div className="w-full h-full bg-blackOverlay flex flex-col items-center justify-start text-white text-center">
-            <div className="px-4 pd:mx-10 mt-20 w-full py-10 md:py-16">
+            <div className="px-4 pd:mx-10 mt-20 w-full py-10 md:py-10">
                 <h1 className="text-4xl font-bold uppercase">The Stage is Yours, We Handle the Rest</h1>
                 <br/>
                 <div className="text-center">
@@ -13,9 +12,7 @@ export default function Hero(){
                     </span>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <button className="bg-brand-600 px-5 py-2 rounded mb-10 md:mb-2">Join Now</button>
+            <button className="bg-brand-600 px-5 py-2 rounded mb-10 md:mb-5 ">Join Now</button>
         </div>
       </section>
 }

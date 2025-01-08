@@ -10,8 +10,8 @@ import { PiClockClockwiseBold , PiShieldCheckFill , PiLightbulbFill , PiPhoneCal
 
 export default function Home() {
   return (
-    <div className="flex justify-center w-full">
-      <div className="barlow max-w-[1600px]">
+    <div className="w-full">
+      <div className="barlow max-w-[1400px] mx-auto">
         <Navbar />
         <Hero />
         <section className="mx-4 md:mx-40 my-10">
@@ -60,19 +60,19 @@ export default function Home() {
           <br/>
           <div className="flex justify-center gap-10 flex-wrap">
             <ContactCard
-              title="Call Us"
+              title="Call"
               description="+91 9876543210"
-              icon={<PiPhoneCallFill className="text-xl"/>}
+              icon={<PiPhoneCallFill className="text-2xl"/>}
             />
             <ContactCard
-              title="Email Us"
+              title="Email"
               description="test@test.com"
-              icon={<PiEnvelopeFill  className="text-xl"/>}
+              icon={<PiEnvelopeFill  className="text-2xl"/>}
             />
             <ContactCard
-              title="Visit Us"
+              title="Visit"
               description="1234 Street Road, Test City, HP, India 123450"
-              icon={<PiMapPinLineFill   className="text-xl"/>}
+              icon={<PiMapPinLineFill   className="text-2xl"/>}
             />
           </div>
         </section>
