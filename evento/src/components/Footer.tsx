@@ -74,7 +74,7 @@ const socialLink = [
 
 export default function Footer(){
     return <div className=" bg-blue-950">
-        <div className="mx-4 md:mx-40 py-4 flex gap-36">
+        <div className="h-screen md:h-fit justify-center mx-12 md:mx-40 py-4 flex gap-2 md:gap-20 lg:gap-36 flex-col md:flex-row">
             <FooterSection title="Quick Links" links={quickLink} />
             <FooterSection title="Customer Support" links={supportLink} />
             <FooterSection title="Company" links={companyLink} />

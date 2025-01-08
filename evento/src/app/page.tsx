@@ -10,8 +10,8 @@ import { PiClockClockwiseBold , PiShieldCheckFill , PiLightbulbFill , PiPhoneCal
 
 export default function Home() {
   return (
-    <div className="w-full">
-      <div className="barlow max-w-[1400px] mx-auto">
+    <div className="md:w-full">
+      <div className="barlow md:max-w-[1400px] md:mx-auto">
         <Navbar />
         <Hero />
         <section className="mx-4 md:mx-40 my-10">
@@ -58,7 +58,7 @@ export default function Home() {
           <SectionHeading><span className="text-brand-950">Contact Us</span></SectionHeading>
           <br/>
           <br/>
-          <div className="flex justify-center gap-10 flex-wrap">
+          <div className="flex justify-center gap-4 md:gap-10 flex-wrap">
             <ContactCard
               title="Call"
               description="+91 9876543210"

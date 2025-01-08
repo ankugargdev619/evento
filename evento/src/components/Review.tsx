@@ -14,11 +14,11 @@ export default function Review({name,rating,review} : ReviewProps){
             className="text-brand-950 rounded-2xl p-4 backdrop-blur-md bg-opacity-50 bg-brand-50 w-72 h-60">
             <div className="font-bold text-xl mb-1">{name}</div>
             <div className="flex gap">
-                {Array.from({length : rating}, (_, i) => i + 1).map((num) => (
-                    <PiStarFill />
+                {Array.from({length : rating}, (_, i) => i + 1).map((_,y) => (
+                    <div key={y}><PiStarFill /></div>
                 ))}
-                {Array.from({length : 5 - rating},(_,i) => i + 1).map((num) =>(
-                    <PiStar />
+                {Array.from({length : 5 - rating},(_,i) => i + 1).map((_,y) =>(
+                    <div key={y}><PiStar /></div>
                 ))}
             </div>
             <br/>
