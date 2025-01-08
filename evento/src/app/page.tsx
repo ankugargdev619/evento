@@ -10,7 +10,7 @@ import { PiClockClockwiseBold , PiShieldCheckFill , PiLightbulbFill , PiPhoneCal
 
 export default function Home() {
   return (
-    <div className="md:w-full">
+    <div className="md:w-full bg-white">
       <div className="barlow md:max-w-[1400px] md:mx-auto">
         <Navbar />
         <Hero />
