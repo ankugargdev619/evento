@@ -1,6 +1,26 @@
 "use client"
 import { useState } from "react";
 import {AnimatePresence, motion} from 'motion/react';
+import { validateHeaderName } from "http";
+
+const options = [
+    {
+        name : "Home",
+        link : "#"
+    },
+    {
+        name : "Events",
+        link : "#"
+    },
+    {
+        name : "Merchandise",
+        link : "#"
+    },
+    {
+        name : "About Us",
+        link : "#"
+    }
+]
 
 export default function Navbar(){
     const [isOpen,setOpen] = useState(false);
@@ -12,10 +32,9 @@ export default function Navbar(){
                             </div>
                             <div className="hidden md:block">
                                 <div className="flex gap-10 ">
-                                    <a href="#">Option 1</a>
-                                    <a href="#">Option 2</a>
-                                    <a href="#">Option 3</a>
-                                    <a href="#">Option 4</a>
+                                    {options.map((element,idx)=>(<a key={idx} href={element.link}>
+                                    {element.name}
+                                    </a>))}
                                 </div>
                             </div>
                             <div className="md:hidden">
@@ -93,10 +112,9 @@ export default function Navbar(){
                             exit={{height:0}}
                             transition={{duration:0.5, ease:'easeInOut'}}
                         >
-                                <a href="#">Option 1</a>
-                                <a href="#">Option 2</a>
-                                <a href="#">Option 3</a>
-                                <a href="#">Option 4</a>    
+                                {options.map((element,idx)=>(<a key={idx} href={element.link}>
+                                    {element.name}
+                                    </a>))}  
                         </motion.div>}
                     </AnimatePresence>
         </div>
