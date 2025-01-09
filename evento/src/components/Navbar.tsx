@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react";
 import {AnimatePresence, motion} from 'motion/react';
-import { validateHeaderName } from "http";
 
 const options = [
     {
@@ -112,7 +111,7 @@ export default function Navbar(){
                             exit={{height:0}}
                             transition={{duration:0.5, ease:'easeInOut'}}
                         >
-                                {options.map((element,idx)=>(<a key={idx} href={element.link}>
+                                {options.map((element,idx)=>(<a key={idx}  onClick={()=>{setOpen(false)}}  href={element.link}>
                                     {element.name}
                                     </a>))}  
                         </motion.div>}

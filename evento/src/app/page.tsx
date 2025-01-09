@@ -62,17 +62,17 @@ export default function Home() {
             <ContactCard
               title="Call"
               description="+91 9876543210"
-              icon={<PiPhoneCallFill className="text-2xl"/>}
+              icon={<PiPhoneCallFill className="text-4xl"/>}
             />
             <ContactCard
               title="Email"
               description="test@test.com"
-              icon={<PiEnvelopeFill  className="text-2xl"/>}
+              icon={<PiEnvelopeFill  className="text-4xl"/>}
             />
             <ContactCard
               title="Visit"
               description="1234 Street Road, Test City, HP, India 123450"
-              icon={<PiMapPinLineFill   className="text-2xl"/>}
+              icon={<PiMapPinLineFill   className="text-4xl"/>}
             />
           </div>
         </section>
