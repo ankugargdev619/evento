@@ -2,12 +2,11 @@
 import { motion} from 'motion/react';
 
 interface ContactCardProps {
-    title : string;
     description : string;
     icon : React.ReactNode;
 }
 
-export default function ContactCard({title, description,icon}: ContactCardProps){
+export default function ContactCard({ description,icon}: ContactCardProps){
     return  <motion.div
             whileHover={{scale : 1.1}}
             className="relative bg-brand-200 backdrop-blur-md bg-opacity-70 rounded-2xl p-4 text-brand-950 w-72 h-24 overflow-hidden">

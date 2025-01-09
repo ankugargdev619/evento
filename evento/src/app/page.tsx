@@ -60,17 +60,14 @@ export default function Home() {
           <br/>
           <div className="flex justify-center gap-4 md:gap-10 flex-wrap">
             <ContactCard
-              title="Call"
               description="+91 9876543210"
               icon={<PiPhoneCallFill className="text-4xl"/>}
             />
             <ContactCard
-              title="Email"
               description="test@test.com"
               icon={<PiEnvelopeFill  className="text-4xl"/>}
             />
             <ContactCard
-              title="Visit"
               description="1234 Street Road, Test City, HP, India 123450"
               icon={<PiMapPinLineFill   className="text-4xl"/>}
             />
